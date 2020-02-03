@@ -14,7 +14,10 @@
 
 #citySearch {
     margin-top: 5px;
-    margin-left: 2px;
+}
+
+#cityInput {
+    margin-left: 15px;
 }
 
 .currentWeather {
@@ -38,4 +41,16 @@
 
 #day1 {
     margin-left: 25px;
+}
+
+.uvIndex {
+    margin-left: 17px;
+}
+
+.uvBox {
+    color: white;
+    width: 50px;
+    text-align: center;
+    padding-bottom: 2px;
+    margin-left: 10px;
 }
