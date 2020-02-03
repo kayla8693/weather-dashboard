@@ -1,0 +1,41 @@
+#header {
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    margin-bottom: 0;
+    height: 65px;
+    padding-top: 5px;
+}
+
+.cityBox {
+    background-color: gainsboro;
+    padding-bottom: 20px;
+}
+
+#citySearch {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.currentWeather {
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    padding-top: 15px;
+}
+
+.futureWeather {
+    margin-top: 15px;
+    margin-left: -5px;
+}
+
+.col-md-2 {
+    height: 50px;
+    border-style: solid;
+    margin: 10px;
+}
+
+#day1 {
+    margin-left: 25px;
+}
