@@ -28,8 +28,6 @@ function displayWeather() {
         var tempF = Math.round(((response.main.temp - 273.15) * 9/5 + 32));
         var iconURL = "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png";
         var icon = $('<img>').attr('src', iconURL);
-        console.log(iconURL)
-        console.log(icon)
 
         $(".city").html("<h4>" + response.name + ", " + response.sys.country + " (" + date + ")" + "</h4>");
         $('.iconBox').empty();
@@ -45,7 +43,7 @@ function displayWeather() {
 
             var lat = response.coord.lat;
             var lon = response.coord.lat;
-            var uvURL = "http://api.openweathermap.org/data/2.5/uvi?appid=a06d53a4d8132cb2c57dac5818e92924&lat=" + lat + "&lon=" + lon
+            var uvURL = "https://api.openweathermap.org/data/2.5/uvi?appid=a06d53a4d8132cb2c57dac5818e92924&lat=" + lat + "&lon=" + lon
 
             $.ajax({
                 url: uvURL,
@@ -95,7 +93,7 @@ function displayWeather() {
 
         function displayForcast() {
             var country = response.sys.country;
-            var forcastURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "," + country + "&appid=a06d53a4d8132cb2c57dac5818e92924";
+            var forcastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "," + country + "&appid=a06d53a4d8132cb2c57dac5818e92924";
 
 
             $.ajax ({
