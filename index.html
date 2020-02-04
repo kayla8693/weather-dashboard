@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Weather Dashboard</title>
-    <link 
-      rel="stylesheet" 
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
     <div class="row">
-        <h1 class="col-md-12" id="header">Weather Dashboard</h1>
+      <h1 class="col-md-12" id="header">Weather Dashboard</h1>
     </div>
     <div class="row">
       <div class="col-md-3 cityBox border-0">
         <h5 id="citySearch">Search for a City:</h5>
         <div class="row">
-        <input class="col-md-8" id="cityInput">
-        <i class="fas fa-search-location btn btn-primary" id="search"></i>
+          <input class="col-md-8" id="cityInput">
+          <i class="fas fa-search-location btn btn-primary" id="search"></i>
         </div>
-        <div id="cities">
-
-        </div>
+        <div id="cities"></div>
+        <button class="clear hide">Clear History</button>
       </div>
 
       <div class="col-md-9">
         <div class="row currentWeather border border-secondary rounded border-right-0">
           <div class="col-md-12">
             <div class="city"></div>
-            <br>
+            <!-- <br> -->
             <div class="temp"></div>
-            <br>
+            <!-- <br> -->
             <div class="humidity"></div>
-            <br>
+            <!-- <br> -->
             <div class="windSpeed"></div>
-            <br>
+            <!-- <br> -->
             <div class="row">
-            <div class="uvIndex"></div>
-            <div class="uvBox rounded"></div>
+              <div class="uvIndex"></div>
+              <div class="uvBox rounded"></div>
             </div>
 
           </div>
@@ -64,7 +54,7 @@
           <h4 class="col-md-12">5-Day Forescast:</h4>
         </div>
 
-        <div class="row">
+        <div class="row forcastBox">
           <div class="col-md-2" id="day1"></div>
           <div class="col-md-2" id="day2"></div>
           <div class="col-md-2" id="day3"></div>
@@ -78,7 +68,9 @@
 
   </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
