@@ -14,10 +14,6 @@ var day3 = d.format('MM/DD/YYYY');
 var day4 = e.format('MM/DD/YYYY');
 var day5 = f.format('MM/DD/YYYY');
 
-
-
-displayWeather();
-
 function displayWeather() {
 
     var cityName = $(this).attr('data-name');
@@ -30,17 +26,20 @@ function displayWeather() {
         console.log(response);
 
         var tempF = Math.round(((response.main.temp - 273.15) * 9/5 + 32));
-        var iconURL = "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"
+        var iconURL = "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png";
         var icon = $('<img>').attr('src', iconURL);
         console.log(iconURL)
         console.log(icon)
 
-        $(".city").html("<h4>" + response.name + ", " + response.sys.country + " (" + date + ")" + icon + "</h4>");
+        $(".city").html("<h4>" + response.name + ", " + response.sys.country + " (" + date + ")" + "</h4>");
+        $('.iconBox').empty();
+        $('.iconBox').append(icon);
+        icon.addClass('img1')
+
         $(".temp").text("Temperature: " + tempF + " F");
         $(".humidity").text("Humidity: " + response.main.humidity + "%");
         $(".windSpeed").text("Wind Speed: " + response.wind.speed + " MPH");
 
-        $('.currentweather').append(icon);
         
         function displayUV() {
 

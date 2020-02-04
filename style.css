@@ -8,7 +8,7 @@
 }
 
 .cityBox {
-    background-color: gainsboro;
+    background-color: #F9FAFA;
     padding-bottom: 20px;
 }
 
@@ -27,6 +27,11 @@
     padding: 5px;
     padding-top: 15px;
     line-height: 40px;
+}
+
+.city {
+    margin-left: 15px;
+    margin-top: 10px;;
 }
 
 .futureWeather {
@@ -63,9 +68,15 @@
 }
 
 .cityBtn {
-    width: 220px;
+    width: 255px;
     text-align: left;
     padding-left: 10px;
+    padding-bottom: 4px;
+    height: 40px;
+    background-color: white;
+    border-style: solid;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .hide {
