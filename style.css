@@ -95,9 +95,9 @@
 } */
 
 @media screen and (max-width: 767.98px) {
-    /* .cityBtn {
-        width: 75px;
-    } */
+    .cityBtn {
+        border-style: none;
+    }
     .currentWeather {
         height: 320px;
         margin-bottom: 15px;
@@ -108,8 +108,5 @@
     .search {
         margin: 5px auto;
         width: 200px;
-    }
-    .cityBox {
-        width: fill;
     }
 }
