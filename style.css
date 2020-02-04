@@ -24,7 +24,6 @@
 .currentWeather {
     height: 250px;
     margin-top: 10px;
-    margin-left: 10px;
     padding: 5px;
     padding-top: 15px;
     line-height: 40px;
@@ -37,7 +36,6 @@
 
 .futureWeather {
     margin-top: 15px;
-    margin-left: -5px;
 }
 
 .col-md-2 {
@@ -71,8 +69,6 @@
     height: 40px;
     background-color: white;
     border-style: solid;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .hide {
@@ -87,4 +83,12 @@
 .img1 {
     height: 50px;
     width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .currentweather {
+        height: 300px;
+        margin-bottom: 15px;
+    }
+
 }
