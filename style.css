@@ -10,6 +10,7 @@
 .cityBox {
     background-color: #F9FAFA;
     padding-bottom: 20px;
+    width: 300px;
 }
 
 #citySearch {
@@ -42,13 +43,8 @@
 .col-md-2 {
     margin: 10px;
     padding-top: 5px;
-    /* background-color:; */
     color: white;
 
-}
-
-#day1 {
-    margin-left: 25px;
 }
 
 .uvIndex {
