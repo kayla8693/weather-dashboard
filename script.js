@@ -115,7 +115,7 @@ function displayWeather() {
                 var icon1 = $('<img>').attr('src', icon1URL);
                 icon1.addClass('img1');
                 $('#day1').addClass('rounded');
-                $('#day1').attr('style', 'background-color: red');
+                $('#day1').attr('style', 'background-color: #037EFC');
                 var temp1Div = $('<p>').text("Temp: " + temp1 + " F");
                 var humid1 = $('<p>').text("Humidity: " + response.list[2].main.humidity + "%");
 
