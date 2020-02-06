@@ -25,8 +25,6 @@ $('#cityInput').keypress(function (e) {
     }
 });
 
-// renderCitiesSearched();
-
 // ajax call for current weather
 function displayWeather() {
 
