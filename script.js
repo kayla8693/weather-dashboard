@@ -25,7 +25,7 @@ $('#cityInput').keypress(function (e) {
     }
 });
 
-renderCitiesSearched();
+// renderCitiesSearched();
 
 // ajax call for current weather
 function displayWeather() {
@@ -268,6 +268,8 @@ function renderCitiesSearched() {
         $("#cities").prepend(a);
     };
 };
+renderCitiesSearched();
+
 
 
 // upon click of any btn w cityBtn class, displayWeather function called
