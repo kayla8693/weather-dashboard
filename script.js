@@ -31,7 +31,6 @@ $('#cityInput').keypress(function (e) {
 function displayWeather() {
 
     var cityName = $(this).attr('data-name');
-    console.log(this)
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=a06d53a4d8132cb2c57dac5818e92924"
 
     $.ajax({
@@ -117,7 +116,6 @@ function displayWeather() {
                 url: forcastURL,
                 method: "GET"
             }).then(function (response) {
-                console.log(response);
                 // converting temps to F and rounding; pulling from each temp, humidity, icon from same time each day
                 var temp1 = Math.round(((response.list[2].main.temp - 273.15) * 9 / 5 + 32));
                 var temp2 = Math.round(((response.list[10].main.temp - 273.15) * 9 / 5 + 32));
@@ -242,6 +240,7 @@ function renderButtons() {
 
     });
 };
+renderCitiesSearched();
 
 // upon clicking search btn, city pushed to array and renderButtons function called
 $("#search").on("click", function (event) {
@@ -268,9 +267,6 @@ function renderCitiesSearched() {
         $("#cities").prepend(a);
     };
 };
-renderCitiesSearched();
-
-
 
 // upon click of any btn w cityBtn class, displayWeather function called
 $(document).on('click', '.cityBtn', displayWeather);
