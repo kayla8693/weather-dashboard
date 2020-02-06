@@ -85,15 +85,6 @@
     width: 50px;
 }
 
-/* @media screen and (max-width: 575.98px) {
-
-
-    .cityBtn {
-        width: auto;
-    }
-
-} */
-
 @media screen and (max-width: 767.98px) {
 
     .currentWeather {
