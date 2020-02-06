@@ -9,3 +9,8 @@ The users searched cities are retained upon each new search, and results can be 
 
 
 https://kayla8693.github.io/weather-dashboard/
+
+<img width="960" alt="Screenshot 2020-02-05 23 32 59" src="https://user-images.githubusercontent.com/56415756/73908787-65391c00-4870-11ea-9ef4-0fc0f8281a12.png">
+<br>
+<br>
+<img width="960" alt="Screenshot 2020-02-05 23 38 32" src="https://user-images.githubusercontent.com/56415756/73908892-b21cf280-4870-11ea-8ea3-df5bc447cf55.png">
