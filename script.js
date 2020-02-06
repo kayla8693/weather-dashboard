@@ -25,10 +25,13 @@ $('#cityInput').keypress(function (e) {
     }
 });
 
+renderCitiesSearched();
+
 // ajax call for current weather
 function displayWeather() {
 
     var cityName = $(this).attr('data-name');
+    console.log(this)
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=a06d53a4d8132cb2c57dac5818e92924"
 
     $.ajax({
@@ -221,10 +224,14 @@ function renderButtons() {
         a.attr('data-name', cityList[i]);
         a.text(cityList[i].toUpperCase());
         $("#cities").prepend(a);
-
+    // adds attr dat-name to search, allowing weather to pop-up on search command
+        var search = $('#search');
+        search.attr('data-name', cityList[i]);
+        
+    // sets cities into local storage
         localStorage.setItem('city', cityList[i]);
+        localStorage.setItem('citiesSearched', cityList);
     };
-
 
     // clears cityList array and list of displayed cities
     $('.clear').removeClass('hide');
@@ -246,5 +253,23 @@ $("#search").on("click", function (event) {
     renderButtons();
 });
 
+// function to display buttons when page refreshed
+function renderCitiesSearched() {
+    var newCityList = localStorage.getItem('citiesSearched')
+    // turns newCityList into array
+    var newList = newCityList.split(",");
+
+    for (var i = 0; i < newList.length; i++) {
+        
+        var a = $('<button>');
+        a.addClass('cityBtn')
+        a.attr('data-name', newList[i]);
+        a.text(newList[i].toUpperCase());
+        $("#cities").prepend(a);
+    };
+};
+
+
 // upon click of any btn w cityBtn class, displayWeather function called
 $(document).on('click', '.cityBtn', displayWeather);
+$(document).on('click', '#search', displayWeather);
