@@ -1,6 +1,7 @@
 #header {
     text-align: center;
-    background-color: darkslategray;
+    /* background-color: darkslategray; */
+    background-color: red;
     color: white;
     margin-bottom: 0;
     height: 65px;
