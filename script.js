@@ -252,7 +252,7 @@ $("#search").on("click", function (event) {
 
 // function to display buttons when page refreshed
 function renderCitiesSearched() {
-    var newCityList = localStorage.getItem('citiesSearched')
+    var newCityList = localStorage.getItem('citiesSearched') || '';
     // turns newCityList into array
     var newList = newCityList.split(",");
 
