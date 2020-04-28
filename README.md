@@ -1,5 +1,5 @@
 # Weather Dashboard
-A weather dashboard application which utilizes the Open Weather API to allowa  user to search for different cities and get live weather updates as well as 5-day forcasts.
+A weather dashboard application which utilizes the Open Weather API to allow  users to search for different cities and get live weather updates as well as 5-day forecasts.
 
 The application uses AJAX to hook into the API to retrieve data in JSON format and display it to the user. Features dynamically updated HTML and CSS powered by jQuery.
 
